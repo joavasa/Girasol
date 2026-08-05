@@ -1,0 +1,197 @@
+/* ==========================
+   ESTILOS GENERALES
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f7f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   ENCABEZADO
+========================== */
+
+header{
+    background:#1565C0;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+header h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:16px;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+nav{
+    background:#2E7D32;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin:0 15px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   CONTENEDOR
+========================== */
+
+.container{
+    width:95%;
+    max-width:1300px;
+    margin:auto;
+    padding:25px;
+}
+
+/* ==========================
+   SECCIONES
+========================== */
+
+section{
+    margin-bottom:50px;
+}
+
+section h2{
+    color:#1565C0;
+    margin-bottom:20px;
+    border-left:6px solid #2E7D32;
+    padding-left:12px;
+}
+
+section h3{
+    margin-top:30px;
+    margin-bottom:15px;
+    color:#2E7D32;
+}
+
+/* ==========================
+   TABLAS
+========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:25px;
+    background:white;
+}
+
+th{
+    background:#1565C0;
+    color:white;
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:left;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:10px;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f8f9fa;
+}
+
+tr:hover{
+    background:#E8F5E9;
+}
+
+/* ==========================
+   GRAVEDAD
+========================== */
+
+.leve{
+    color:#2E7D32;
+    font-weight:bold;
+}
+
+.grave{
+    color:#F57C00;
+    font-weight:bold;
+}
+
+.muy-grave{
+    color:#D32F2F;
+    font-weight:bold;
+}
+
+/* ==========================
+   CAJAS INFORMATIVAS
+========================== */
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-left:6px solid #1565C0;
+    border-radius:5px;
+}
+
+/* ==========================
+   PIE DE PÁGINA
+========================== */
+
+footer{
+    background:#1565C0;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    body{
+        font-size:14px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    table{
+        font-size:13px;
+    }
+
+    th,
+    td{
+        padding:8px;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+}
