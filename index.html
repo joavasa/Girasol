@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reglamento de Áreas Comunes</title>
     <link rel="stylesheet" href="styles.css">
+
 
 </head>
 
@@ -14,8 +16,12 @@
 
     <nav>
         <a href="#horarios">Horarios</a> |
-        <a href="#tarifas">Tarifas y Garantías</a>
-        <a href="#infracciones">Cuadro de Infracciones y Sanciones</a>
+        <a href="#tarifas">Tarifas y Garantías</a> |
+        <a href="#infracciones">Infracciones y Sanciones</a> |
+        <a href="#reincidencia">Reincidencia y Reiterancia</a>
+        <a href="Normas_de_Convivencia_Edificio_Girasol 04082026.docx">📄 Reglamento</a>
+
+
     </nav>
 
     <hr>
@@ -273,9 +279,11 @@
 
     </section>
 
+
+
     <section id="infracciones">
 
-        <h2>Cuadro de Infracciones y Sanciones</h2>
+        <h2>Infracciones y Sanciones</h2>
 
         <h3>I. Cuotas y Obligaciones de Pago</h3>
 
@@ -293,7 +301,7 @@
                 <td>
                     Incumplimiento del pago de la cuota de mantenimiento dentro del plazo establecido.
                 </td>
-                <td>Muy grave</td>
+                <td class="muy-grave">Muy grave</td>
                 <td>
                     Penalidad diaria por mora.<br><br>
                     Desde el día 31 se aplica un cargo administrativo de
@@ -307,7 +315,7 @@
                 <td>
                     No asistir injustificadamente a las sesiones convocadas.
                 </td>
-                <td>Leve</td>
+                <td class="leve">Leve</td>
                 <td>
                     Primera vez: amonestación escrita.<br>
                     Reincidencia: multa de <strong>S/50.00</strong>.
@@ -318,7 +326,7 @@
 
         <br>
 
-        <h3>II. Convivencia, Ruidos y Uso de Área Exclusiva</h3>
+        <h3 id="cap2">II. Convivencia, Ruidos y Uso de Área Exclusiva</h3>
 
         <table border="1" cellpadding="8" cellspacing="0">
 
@@ -331,76 +339,588 @@
 
             <tr>
                 <td>Ruidos por trabajos domésticos</td>
-                <td>Trabajos fuera del horario autorizado.</td>
-                <td>Leve</td>
                 <td>
-                    Primera vez: amonestación.<br>
-                    Segunda vez: multa S/50.00.<br>
-                    Tercera vez: multa S/50.00.
+                    Ejecución de trabajos de mantenimiento, reparación o instalación
+                    dentro del departamento fuera del horario autorizado en el capítulo
+                    <strong>Obras en el Edificio</strong>.
+                </td>
+                <td class="leve">Leve</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Segunda ocurrencia dentro de los 90 días calendario:
+                    multa de <strong>S/ 50.00</strong>.<br>
+                    Tercera ocurrencia o posteriores:
+                    multa de <strong>S/ 50.00</strong>.
                 </td>
             </tr>
 
             <tr>
                 <td>Ruidos por reuniones o fiestas</td>
-                <td>Exceso de ruido en reuniones.</td>
-                <td>Grave</td>
                 <td>
-                    Primera vez: amonestación.<br>
-                    Reincidencia: multa S/100.00.<br>
-                    Puede intervenir Serenazgo.
+                    Ruidos provenientes de reuniones, celebraciones o equipos de sonido
+                    que excedan los horarios establecidos o afecten la tranquilidad de
+                    los residentes.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Reincidencia: multa de <strong>S/ 100.00</strong>.<br>
+                    Tercera ocurrencia o posteriores dentro de los 90 días calendario:
+                    multa de <strong>S/ 100.00</strong>.<br>
+                    Se podrá requerir la intervención del Serenazgo, sin perjuicio de
+                    las acciones correspondientes.<br><br>
+                    <strong>En todos los casos, el responsable asumirá las sanciones
+                        municipales que correspondan.</strong>
                 </td>
             </tr>
 
             <tr>
                 <td>Uso del balcón como tendedero</td>
                 <td>
-                    Colocar ropa u objetos visibles desde el exterior.
+                    Utilizar la fachada o balcones exteriores visibles desde el exterior
+                    como tendedero de ropa o colocar avisos, banderolas u objetos
+                    visibles desde el exterior, en contravención del capítulo
+                    <strong>Tratamiento de Fachada</strong>.
+                    Se exceptúan los balcones internos no visibles desde el exterior.
                 </td>
-                <td>Grave</td>
+                <td class="grave">Grave</td>
                 <td>
-                    Retiro inmediato.<br>
-                    Reincidencia: multa de S/100.00.
+                    Amonestación escrita y requerimiento de retiro inmediato.<br>
+                    Reincidencia: multa de
+                    <strong>S/ 100.00</strong>.
                 </td>
             </tr>
 
-            <!-- Continúan las demás infracciones -->
+            <tr>
+                <td>Modificaciones no autorizadas en bienes comunes</td>
+                <td>
+                    Realizar cambios visibles en fachada, ventanas, balcones, pasillos
+                    u otros bienes comunes sin autorización expresa de la Junta de
+                    Propietarios.
+                </td>
+                <td class="muy-grave">Muy grave</td>
+                <td>
+                    Notificación escrita ordenando el cese o la restitución al estado
+                    original en un plazo máximo de quince (15) días calendario.<br>
+                    Vencido dicho plazo sin cumplimiento:
+                    multa de <strong>S/ 200.00</strong> y restitución obligatoria a
+                    costo del infractor, sin perjuicio de las acciones legales
+                    correspondientes.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Uso comercial del departamento</td>
+                <td>
+                    Destinar el departamento a un establecimiento comercial de libre
+                    acceso al público, contraviniendo el uso exclusivo de vivienda
+                    establecido en el Reglamento Interno.
+                </td>
+                <td class="muy-grave">Muy grave</td>
+                <td>
+                    Multa de <strong>S/ 200.00</strong> y requerimiento de cese
+                    inmediato.<br>
+                    La persistencia de la infracción dará lugar a la aplicación del
+                    régimen reiterativo y a las acciones legales correspondientes.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Violencia o agresiones</td>
+                <td>
+                    Agresiones físicas, verbales, hostigamiento o amenazas contra
+                    propietarios, residentes, visitantes o personal del edificio.
+                </td>
+                <td class="muy-grave">Muy grave</td>
+                <td>
+                    Multa de <strong>S/ 200.00</strong> y amonestación escrita,
+                    sin perjuicio de la denuncia penal correspondiente y de la
+                    comunicación a las autoridades competentes.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Arrendamiento sin comunicación</td>
+                <td>
+                    No comunicar a la Administración el arrendamiento del departamento,
+                    estacionamiento o depósito conforme al capítulo
+                    <strong>Arrendamiento</strong>.
+                </td>
+                <td class="leve">Leve</td>
+                <td>
+                    Requerimiento de regularización dentro de cinco (5) días hábiles.<br>
+                    De no cumplir con el plazo:
+                    multa de <strong>S/ 50.00</strong>.
+                </td>
+            </tr>
+
+        </table>
+
+        <h3>III. Mudanzas, Residuos y Limpieza</h3>
+
+        <table>
+
+            <tr>
+                <th>Tipo de falta</th>
+                <th>Descripción</th>
+                <th>Gravedad</th>
+                <th>Sanción</th>
+            </tr>
+
+            <tr>
+                <td>Mudanza fuera de horario autorizado</td>
+                <td>
+                    Realizar mudanzas fuera del horario autorizado o sin la comunicación
+                    previa exigible, incluyendo feriados no autorizados.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Amonestación escrita y multa de <strong>S/100.00</strong>.
+                    Sin perjuicio de reparar los daños ocasionados a las áreas comunes.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Residuos sin embolsar</td>
+                <td>
+                    Depositar residuos sin bolsa cerrada, con derrames o sin la debida
+                    segregación.
+                </td>
+                <td class="leve">Leve</td>
+                <td>
+                    Amonestación escrita y multa de <strong>S/50.00</strong>.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Disposición indebida de residuos</td>
+                <td>
+                    Abandonar residuos en pasillos, escaleras, frente a puertas,
+                    estacionamientos u otras áreas comunes.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Reincidencia: multa de <strong>S/100.00</strong> y retiro inmediato
+                    de los residuos.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Disposición de desmonte o bienes voluminosos</td>
+                <td>
+                    Abandonar restos de obra, muebles, electrodomésticos u otros objetos
+                    voluminosos en áreas comunes o cuarto de basura.
+                </td>
+                <td class="muy-grave">Muy grave</td>
+                <td>
+                    Multa de <strong>S/200.00</strong>.<br>
+                    Retiro obligatorio en un plazo máximo de 48 horas.<br>
+                    De no hacerlo, la Administración efectuará el retiro con cargo al
+                    recibo mensual del propietario.
+                </td>
+            </tr>
 
         </table>
 
         <br>
 
-        <h3>III. Mudanzas, Residuos y Limpieza</h3>
-
-        <table border="1" cellpadding="8" cellspacing="0">
-            ...
-        </table>
-
         <h3>IV. Tenencia y Cuidado de Mascotas</h3>
 
-        <table border="1" cellpadding="8" cellspacing="0">
-            ...
-        </table>
+        <table>
 
+            <tr>
+                <th>Tipo de falta</th>
+                <th>Descripción</th>
+                <th>Gravedad</th>
+                <th>Sanción</th>
+            </tr>
+
+            <tr>
+                <td>Omisión en el recojo de desechos</td>
+                <td>
+                    No recoger las heces, orina o suciedad ocasionada por la mascota en
+                    zonas comunes.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Amonestación escrita y limpieza inmediata.<br>
+                    Reincidencia o incumplimiento: multa de
+                    <strong>S/100.00</strong>.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tránsito sin correa o sin bozal</td>
+                <td>
+                    Circular con la mascota sin correa o sin bozal cuando sea exigible
+                    por ley.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Reincidencia: multa de <strong>S/100.00</strong>.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mascota en zona prohibida</td>
+                <td>
+                    Ingresar mascotas a zonas donde está prohibido su acceso
+                    (parrillas, piscina, gimnasio, SUM, coworking, sala de juegos,
+                    entre otras).
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Reincidencia: multa de <strong>S/100.00</strong>.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mascota agresiva sin control</td>
+                <td>
+                    Ataques, comportamiento agresivo o lesiones ocasionadas por la
+                    mascota.
+                </td>
+                <td class="muy-grave">Muy grave</td>
+                <td>
+                    Amonestación escrita.<br>
+                    Obligación de adoptar medidas de control (bozal,
+                    adiestramiento o retiro).<br>
+                    Multa de <strong>S/200.00</strong> y comunicación a las autoridades
+                    competentes.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Maltrato animal</td>
+                <td>
+                    Maltrato físico o psicológico a una mascota dentro del edificio.
+                </td>
+                <td class="muy-grave">Muy grave</td>
+                <td>
+                    Multa de <strong>S/200.00</strong>, amonestación escrita y
+                    comunicación a la autoridad competente conforme a la Ley N.° 30407.
+                </td>
+            </tr>
+
+        </table>
         <h3>V. Estacionamientos Vehiculares</h3>
 
-        <table border="1" cellpadding="8" cellspacing="0">
-            ...
+        <table>
+
+            <tr>
+                <th>Tipo de falta</th>
+                <th>Descripción</th>
+                <th>Gravedad</th>
+                <th>Sanción</th>
+            </tr>
+
+            <tr>
+                <td>Estacionamiento indebido</td>
+                <td>
+                    Estacionar el vehículo en una plaza distinta a la de propiedad o uso
+                    autorizado, o invadir áreas de maniobra y zonas comunes.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Reincidencia: multa de <strong>S/100.00</strong>.<br>
+                    Persistencia: traslado del vehículo mediante grúa, cuyos costos
+                    serán asumidos por el infractor y cargados a su recibo mensual.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Reparación o lavado de vehículos</td>
+                <td>
+                    Realizar reparaciones mecánicas, mantenimiento o lavado de vehículos
+                    dentro del estacionamiento, salvo casos de emergencia permitidos.
+                </td>
+                <td class="leve">Leve</td>
+                <td>
+                    Amonestación escrita.<br>
+                    En caso de reincidencia: multa de
+                    <strong>S/50.00</strong>.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Almacenamiento de objetos inflamables</td>
+                <td>
+                    Guardar materiales inflamables, explosivos o peligrosos en la plaza
+                    de estacionamiento.
+                </td>
+                <td class="muy-grave">Muy grave</td>
+                <td>
+                    Multa de <strong>S/200.00</strong>.<br>
+                    Retiro inmediato de los objetos y comunicación a Defensa Civil
+                    y Bomberos.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Puerta vehicular abierta</td>
+                <td>
+                    Dejar abierta la puerta de ingreso vehicular comprometiendo la
+                    seguridad del edificio.
+                </td>
+                <td class="grave">Leve / Grave</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Reincidencia: multa de <strong>S/100.00</strong>.<br>
+                    Si se producen daños o robos, el responsable responderá por los
+                    perjuicios ocasionados.
+                </td>
+            </tr>
+
         </table>
+
+        <br>
 
         <h3>VI. Parque de Bicicletas</h3>
 
-        <table border="1" cellpadding="8" cellspacing="0">
-            ...
+        <table>
+
+            <tr>
+                <th>Tipo de falta</th>
+                <th>Descripción</th>
+                <th>Gravedad</th>
+                <th>Sanción</th>
+            </tr>
+
+            <tr>
+                <td>Bicicleta sin taquillero identificador</td>
+                <td>
+                    Utilizar el rack sin colocar el taquillero identificador asignado al
+                    departamento.
+                </td>
+                <td class="leve">Leve</td>
+                <td>
+                    Amonestación escrita y requerimiento de regularización dentro de
+                    cinco (5) días hábiles.<br>
+                    Incumplimiento: multa de
+                    <strong>S/50.00</strong>.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Uso de más de un rack por departamento</td>
+                <td>
+                    Ocupar más de un espacio para bicicletas sin autorización de la
+                    Administración.
+                </td>
+                <td class="leve">Leve</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Reincidencia: multa de
+                    <strong>S/50.00</strong> y retiro de la bicicleta excedente
+                    dentro de las siguientes 48 horas.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Uso indebido del rack</td>
+                <td>
+                    Utilizar el espacio para almacenar herramientas, muebles,
+                    coches u otros objetos.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Reincidencia: multa de
+                    <strong>S/100.00</strong> y retiro inmediato de los objetos.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Reparación o lavado de bicicletas</td>
+                <td>
+                    Realizar mantenimiento, reparación o limpieza de bicicletas en el
+                    área destinada exclusivamente al estacionamiento.
+                </td>
+                <td class="leve">Leve</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    La multa de
+                    <strong>S/50.00</strong>
+                    procederá únicamente en caso de reincidencia, daño, obstrucción
+                    o suciedad no corregida.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ingreso de mascotas o uso recreativo</td>
+                <td>
+                    Utilizar el parque de bicicletas como zona de juego, paseo o
+                    permanencia de mascotas, niños o terceros.
+                </td>
+                <td class="leve">Leve</td>
+                <td>
+                    Amonestación escrita.<br>
+                    Reincidencia o generación de riesgo:
+                    multa de <strong>S/50.00</strong>.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Abandono de bicicletas</td>
+                <td>
+                    Mantener una bicicleta sin uso por más de treinta (30) días
+                    consecutivos sin aviso a la Administración o sin etiqueta
+                    identificadora.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Amonestación escrita.<br>
+                    Retiro al área de custodia.<br>
+                    Multa de <strong>S/100.00</strong>.<br>
+                    Si transcurren sesenta (60) días adicionales sin reclamo,
+                    la Administración podrá disponer de la bicicleta conforme
+                    al procedimiento aprobado por la Junta de Propietarios.
+                </td>
+            </tr>
+
         </table>
 
         <h3>VII. Áreas Comunes Recreativas</h3>
 
-        <table border="1" cellpadding="8" cellspacing="0">
-            ...
+        <table>
+
+            <tr>
+                <th>Tipo de falta</th>
+                <th>Descripción</th>
+                <th>Gravedad</th>
+                <th>Sanción</th>
+            </tr>
+
+            <tr>
+                <td>Volumen inapropiado</td>
+                <td>
+                    Mantener un volumen de música o generar ruidos que excedan los
+                    niveles razonables o afecten la tranquilidad de los residentes
+                    del edificio o de las edificaciones colindantes.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Primera ocurrencia: amonestación escrita.<br>
+                    Reincidencia: multa de <strong>S/100.00</strong>.<br>
+                    Tercera ocurrencia o posteriores: multa de
+                    <strong>S/100.00</strong>, intervención del Serenazgo,
+                    terminación inmediata de la reunión y suspensión del derecho
+                    de uso del área por treinta (30) días calendario.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Exceso de aforo</td>
+                <td>
+                    Permitir reuniones que excedan el aforo máximo autorizado para
+                    el área común recreativa correspondiente.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Amonestación escrita y corrección inmediata cuando el exceso sea
+                    puntual.<br>
+                    Si el exceso persiste o compromete la seguridad:
+                    multa de <strong>S/100.00</strong> y suspensión del derecho
+                    de uso durante treinta (30) días calendario.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Entrega del área en mal estado</td>
+                <td>
+                    No entregar el área recreativa en las mismas condiciones de orden
+                    y limpieza en que fue recibida, cuando ello no esté incluido en la
+                    tarifa de limpieza.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Limpieza inmediata a cargo del responsable o cobro del costo de
+                    limpieza extraordinaria.<br>
+                    En caso de reincidencia o negativa a subsanar:
+                    multa de <strong>S/100.00</strong> y suspensión del derecho
+                    de uso por treinta (30) días calendario.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Daños al mobiliario o instalaciones</td>
+                <td>
+                    Ocasionar daños al mobiliario, equipos o instalaciones; utilizar
+                    materiales peligrosos; o colocar objetos no autorizados que
+                    comprometan la integridad del área común.
+                </td>
+                <td class="muy-grave">Muy grave</td>
+                <td>
+                    Reparación o reposición a costo del infractor.<br>
+                    Se aplicará previamente la garantía entregada y el saldo restante
+                    será cargado al recibo de mantenimiento.<br>
+                    En caso de daño doloso, negligencia grave o negativa de pago:
+                    multa de <strong>S/200.00</strong> y suspensión del derecho
+                    de uso por noventa (90) días calendario.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Uso fuera del horario o sin reserva</td>
+                <td>
+                    Utilizar un área común sin efectuar la reserva correspondiente
+                    o permanecer después del horario autorizado.
+                </td>
+                <td class="grave">Grave</td>
+                <td>
+                    Amonestación escrita y desocupación inmediata del área.<br>
+                    Reincidencia o negativa a retirarse:
+                    multa de <strong>S/100.00</strong> y suspensión del derecho
+                    de uso por treinta (30) días calendario.
+                </td>
+            </tr>
+
+            <tr>
+                <td>Reserva en favor de tercero no autorizado</td>
+                <td>
+                    Realizar una reserva a nombre propio para ceder el uso del área
+                    a personas ajenas al edificio o no autorizadas por la
+                    Administración.
+                </td>
+                <td class="muy-grave">Muy grave</td>
+                <td>
+                    Multa de <strong>S/200.00</strong> y suspensión del derecho
+                    de uso de las áreas comunes por noventa (90) días calendario.
+                </td>
+            </tr>
+
         </table>
 
     </section>
 
+    <section id="reincidencia">
+        <h2>Reincidencia y Reiterancia</h2>
+
+        <table border="1" cellpadding="8" cellspacing="0">
+
+            <tr>
+                <th>Supuesto</th>
+                <th>Multa adicional</th>
+                <th>Medida accesoria</th>
+            </tr>
+
+            <tr>
+                <td>Reiterancia: tres (3) infracciones (de cualquier gravedad).</td>
+                <td>S/ 300.00</td>
+                <td>Inhabilitación del uso de áreas comunes recreativas por tres (3) meses.</td>
+            </tr>
+
+            <tr>
+                <td>Reiterancia agravada: cuatro (4) o más infracciones dentro del trimestre calendario, o dos (2)
+                    infracciones graves consecutivas.</td>
+                <td>S/ 600.00</td>
+                <td>Inhabilitación del uso de áreas comunes recreativas por seis (6) meses.</td>
+            </tr>
+    </section>
 </body>
 
 </html>
