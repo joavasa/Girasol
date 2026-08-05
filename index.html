@@ -10,24 +10,13 @@
 
 </head>
 
-<script>
-
-    function toggleMenu() {
-
-        document
-            .getElementById("navbar")
-            .classList.toggle("show");
-
-    }
-
-</script>
 
 <body>
 
     <header>
         <h1>Reglamento Interno Girasol </h1>
 
-        <button class="menu-toggle" onclick="toggleMenu()">
+        <button id="menuBtn" class="menu-toggle" onclick="toggleMenu()">
             ☰
         </button>
 
@@ -942,6 +931,68 @@
             </tr>
         </table>
     </section>
+
+
+    <script>
+
+        const menu = document.getElementById("navbar");
+        const menuBtn = document.getElementById("menuBtn");
+
+        // Abrir / cerrar menú
+        function toggleMenu() {
+
+            menu.classList.toggle("show");
+            actualizarIcono();
+
+        }
+
+        // Cambia el icono ☰ / ✕
+        function actualizarIcono() {
+
+            menuBtn.innerHTML =
+                menu.classList.contains("show") ? "✕" : "☰";
+
+        }
+
+        // Cerrar menú
+        function cerrarMenu() {
+
+            menu.classList.remove("show");
+            actualizarIcono();
+
+        }
+
+        // Al pulsar una opción del menú
+        document.querySelectorAll("#navbar a").forEach(link => {
+
+            link.addEventListener("click", cerrarMenu);
+
+        });
+
+        // Cerrar al tocar fuera del menú
+        document.addEventListener("click", function (e) {
+
+            const clickDentroMenu = menu.contains(e.target);
+            const clickBoton = menuBtn.contains(e.target);
+
+            if (!clickDentroMenu && !clickBoton) {
+                cerrarMenu();
+            }
+
+        });
+
+        // Cerrar si la pantalla cambia a escritorio
+        window.addEventListener("resize", function () {
+
+            if (window.innerWidth > 768) {
+                cerrarMenu();
+            }
+
+        });
+
+    </script>
 </body>
+
+
 
 </html>

@@ -2,178 +2,180 @@
    ESTILOS GENERALES
 ========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background:#f4f7f9;
-    color:#333;
-    line-height:1.6;
+    background: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* ==========================
    HEADER
 ========================== */
 
-header{
-    background:#1565C0;
-    color:white;
-    position:sticky;
-    top:0;
-    z-index:999;
+header {
+    background: #1565C0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
-header h1{
-    padding:18px;
-    text-align:center;
-    font-size:30px;
+header h1 {
+    padding: 18px;
+    text-align: center;
+    font-size: 30px;
 }
 
-.menu-toggle{
-    display:none;
-    position:absolute;
-    right:15px;
-    top:15px;
-    background:none;
-    border:none;
-    color:white;
-    font-size:30px;
-    cursor:pointer;
+.menu-toggle {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 /* ==========================
    NAVBAR
 ========================== */
 
-nav{
-    background:#2E7D32;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+nav {
+    background: #2E7D32;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all .3s ease;
+
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:16px 20px;
-    font-weight:bold;
-    transition:.3s;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 20px;
+    font-weight: bold;
+    transition: .3s;
 }
 
-nav a:hover{
-    background:#1B5E20;
+nav a:hover {
+    background: #1B5E20;
 }
 
 /* ==========================
    CONTENEDOR
 ========================== */
 
-.container{
-    width:95%;
-    max-width:1300px;
-    margin:auto;
-    padding:25px;
+.container {
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 25px;
 }
 
 /* ==========================
    SECCIONES
 ========================== */
 
-section{
-    margin-bottom:50px;
+section {
+    margin-bottom: 50px;
 }
 
-section h2{
-    color:#1565C0;
-    margin-bottom:20px;
-    border-left:6px solid #2E7D32;
-    padding-left:12px;
+section h2 {
+    color: #1565C0;
+    margin-bottom: 20px;
+    border-left: 6px solid #2E7D32;
+    padding-left: 12px;
 }
 
-section h3{
-    margin-top:30px;
-    margin-bottom:15px;
-    color:#2E7D32;
+section h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2E7D32;
 }
 
 /* ==========================
    TABLAS
 ========================== */
 
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-bottom:25px;
-    background:white;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    background: white;
+    table-layout:fixed;
+
 }
 
-th{
-    background:#1565C0;
-    color:white;
-    padding:12px;
-    border:1px solid #ddd;
-    text-align:left;
-}
-
+th,
 td{
     border:1px solid #ddd;
     padding:10px;
     vertical-align:top;
+
+    /* Nuevas reglas */
+    white-space:normal;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
 }
 
-tr:nth-child(even){
-    background:#f8f9fa;
+tr:nth-child(even) {
+    background: #f8f9fa;
 }
 
-tr:hover{
-    background:#E8F5E9;
+tr:hover {
+    background: #E8F5E9;
 }
 
 /* ==========================
    GRAVEDAD
 ========================== */
 
-.leve{
-    color:#2E7D32;
-    font-weight:bold;
+.leve {
+    color: #2E7D32;
+    font-weight: bold;
 }
 
-.grave{
-    color:#F57C00;
-    font-weight:bold;
+.grave {
+    color: #F57C00;
+    font-weight: bold;
 }
 
-.muy-grave{
-    color:#D32F2F;
-    font-weight:bold;
+.muy-grave {
+    color: #D32F2F;
+    font-weight: bold;
 }
 
 /* ==========================
    CAJAS INFORMATIVAS
 ========================== */
 
-.card{
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-left:6px solid #1565C0;
-    border-radius:5px;
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #1565C0;
+    border-radius: 5px;
 }
 
 /* ==========================
    PIE DE PÁGINA
 ========================== */
 
-footer{
-    background:#1565C0;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
+footer {
+    background: #1565C0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 
@@ -181,49 +183,73 @@ footer{
    RESPONSIVE
 ========================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    body{
-        font-size:14px;
+    body {
+        font-size: 14px;
     }
 
-    header h1{
-        font-size:22px;
-        padding:18px 50px 18px 15px;
-        text-align:left;
+    header h1 {
+        font-size: 22px;
+        padding: 18px 50px 18px 15px;
+        text-align: left;
     }
 
-    .menu-toggle{
-        display:block;
+    .menu-toggle {
+        display: block;
     }
 
-    nav{
-        display:none;
-        flex-direction:column;
-        width:100%;
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        animation: menu .25s ease;
     }
 
-    nav.show{
-        display:flex;
+    nav.show {
+        display: flex;
     }
 
-    nav a{
-        width:100%;
-        border-top:1px solid rgba(255,255,255,.15);
-        text-align:left;
-        padding:15px;
+    nav a {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, .15);
+        text-align: left;
+        padding: 15px;
     }
 
-    table{
-        font-size:12px;
-        display:block;
-        overflow-x:auto;
-        white-space:nowrap;
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
     th,
-    td{
-        padding:8px;
+    td {
+        padding: 8px;
     }
 
+}
+
+@keyframes menu{
+
+    from{
+        opacity:0;
+        transform:translateY(-15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:110px;
+}
+
+section[id]{
+    scroll-margin-top:110px;
 }
