@@ -10,19 +10,35 @@
 
 </head>
 
+<script>
+
+    function toggleMenu() {
+
+        document
+            .getElementById("navbar")
+            .classList.toggle("show");
+
+    }
+
+</script>
+
 <body>
 
-    <h1>Áreas Comunes del Edificio</h1>
+    <header>
+        <h1>Reglamento Interno Girasol </h1>
 
-    <nav>
-        <a href="#horarios">Horarios</a> |
-        <a href="#tarifas">Tarifas y Garantías</a> |
-        <a href="#infracciones">Infracciones y Sanciones</a> |
-        <a href="#reincidencia">Reincidencia y Reiterancia</a>
-        <a href="Normas_de_Convivencia_Edificio_Girasol 04082026.docx">📄 Reglamento</a>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
 
-
-    </nav>
+        <nav id="navbar">
+            <a href="#horarios">Horarios</a>
+            <a href="#tarifas">Tarifas y Garantías</a>
+            <a href="#infracciones">Infracciones y Sanciones</a>
+            <a href="#reincidencia">Reincidencia y Reiterancia</a>
+            <a href="Reglamento.docx">📄 Reglamento (Descargar Word)</a>
+        </nav>
+    </header>
 
     <hr>
 
@@ -145,137 +161,140 @@
 
         <h2>Tarifas, Garantías y Condiciones</h2>
 
-        <table border="1" cellpadding="8" cellspacing="0">
+        <div class="table-responsive">
+            <table border="1" cellpadding="8" cellspacing="0">
 
-            <tr>
-                <th>Área / Servicio</th>
-                <th>Concepto</th>
-                <th>Monto</th>
-                <th>Garantía</th>
-                <th>Condiciones</th>
-            </tr>
+                <tr>
+                    <th>Área / Servicio</th>
+                    <th>Concepto</th>
+                    <th>Monto</th>
+                    <th>Garantía</th>
+                    <th>Condiciones</th>
+                </tr>
 
-            <tr>
-                <td>Sala de Juegos de Niños</td>
-                <td>Uso (costo simbólico)</td>
-                <td>S/ 5.00</td>
-                <td>No aplica</td>
-                <td>Aporte destinado al mantenimiento. Daños se cobran al responsable.</td>
-            </tr>
+                <tr>
+                    <td>Sala de Juegos de Niños</td>
+                    <td>Uso (costo simbólico)</td>
+                    <td>S/ 5.00</td>
+                    <td>No aplica</td>
+                    <td>Aporte destinado al mantenimiento. Daños se cobran al responsable.</td>
+                </tr>
 
-            <tr>
-                <td>Terrazas / Fogata</td>
-                <td>Gas e insumos</td>
-                <td>S/ 5.00 por 2 horas</td>
-                <td>No aplica</td>
-                <td>Cargo al recibo de mantenimiento.</td>
-            </tr>
+                <tr>
+                    <td>Terrazas / Fogata</td>
+                    <td>Gas e insumos</td>
+                    <td>S/ 5.00 por 2 horas</td>
+                    <td>No aplica</td>
+                    <td>Cargo al recibo de mantenimiento.</td>
+                </tr>
 
-            <tr>
-                <td>Rooftop</td>
-                <td>Uso ordinario</td>
-                <td>Gratuito</td>
-                <td>No aplica</td>
-                <td>Daños y limpieza extraordinaria se cobran.</td>
-            </tr>
+                <tr>
+                    <td>Rooftop</td>
+                    <td>Uso ordinario</td>
+                    <td>Gratuito</td>
+                    <td>No aplica</td>
+                    <td>Daños y limpieza extraordinaria se cobran.</td>
+                </tr>
 
-            <tr>
-                <td>Zona de Parrillas</td>
-                <td>Reserva</td>
-                <td>S/ 40.00</td>
-                <td>S/ 180.00</td>
-                <td>Garantía reembolsable en máximo 72 horas.</td>
-            </tr>
+                <tr>
+                    <td>Zona de Parrillas</td>
+                    <td>Reserva</td>
+                    <td>S/ 40.00</td>
+                    <td>S/ 180.00</td>
+                    <td>Garantía reembolsable en máximo 72 horas.</td>
+                </tr>
 
-            <tr>
-                <td>Lounge Bar</td>
-                <td>Limpieza posterior</td>
-                <td>S/ 50 reserva + S/30 limpieza</td>
-                <td>S/ 200.00</td>
-                <td>Garantía reembolsable en máximo 72 horas.</td>
-            </tr>
+                <tr>
+                    <td>Lounge Bar</td>
+                    <td>Limpieza posterior</td>
+                    <td>S/ 50 reserva + S/30 limpieza</td>
+                    <td>S/ 200.00</td>
+                    <td>Garantía reembolsable en máximo 72 horas.</td>
+                </tr>
 
-            <tr>
-                <td>Sala SUM</td>
-                <td>Limpieza posterior</td>
-                <td>S/ 50 reserva + S/30 limpieza</td>
-                <td>S/ 200.00</td>
-                <td>Garantía aplicable cuando existan invitados.</td>
-            </tr>
+                <tr>
+                    <td>Sala SUM</td>
+                    <td>Limpieza posterior</td>
+                    <td>S/ 50 reserva + S/30 limpieza</td>
+                    <td>S/ 200.00</td>
+                    <td>Garantía aplicable cuando existan invitados.</td>
+                </tr>
 
-            <tr>
-                <td>Gimnasio</td>
-                <td>Uso ordinario</td>
-                <td>Gratuito</td>
-                <td>No aplica</td>
-                <td>Mantenimiento cubierto por presupuesto común.</td>
-            </tr>
+                <tr>
+                    <td>Gimnasio</td>
+                    <td>Uso ordinario</td>
+                    <td>Gratuito</td>
+                    <td>No aplica</td>
+                    <td>Mantenimiento cubierto por presupuesto común.</td>
+                </tr>
 
-            <tr>
-                <td>Piscina</td>
-                <td>Uso ordinario</td>
-                <td>Gratuito</td>
-                <td>No aplica</td>
-                <td>Sujeto a aforo y normas de seguridad.</td>
-            </tr>
+                <tr>
+                    <td>Piscina</td>
+                    <td>Uso ordinario</td>
+                    <td>Gratuito</td>
+                    <td>No aplica</td>
+                    <td>Sujeto a aforo y normas de seguridad.</td>
+                </tr>
 
-            <tr>
-                <td>Piscina</td>
-                <td>Reserva total (3 horas)</td>
-                <td>S/50 reserva + S/30 limpieza</td>
-                <td>S/150.00</td>
-                <td>Máximo 180 minutos. Sujeta a disponibilidad.</td>
-            </tr>
+                <tr>
+                    <td>Piscina</td>
+                    <td>Reserva total (3 horas)</td>
+                    <td>S/50 reserva + S/30 limpieza</td>
+                    <td>S/150.00</td>
+                    <td>Máximo 180 minutos. Sujeta a disponibilidad.</td>
+                </tr>
 
-            <tr>
-                <td>Coworking</td>
-                <td>Uso del espacio</td>
-                <td>Gratuito</td>
-                <td>No aplica</td>
-                <td>Con registro.</td>
-            </tr>
+                <tr>
+                    <td>Coworking</td>
+                    <td>Uso del espacio</td>
+                    <td>Gratuito</td>
+                    <td>No aplica</td>
+                    <td>Con registro.</td>
+                </tr>
 
-            <tr>
-                <td>Coworking</td>
-                <td>Uso máquina de café (propietario)</td>
-                <td>Gratuito</td>
-                <td>No aplica</td>
-                <td>El propietario se encarga del funcionamiento.</td>
-            </tr>
+                <tr>
+                    <td>Coworking</td>
+                    <td>Uso máquina de café (propietario)</td>
+                    <td>Gratuito</td>
+                    <td>No aplica</td>
+                    <td>El propietario se encarga del funcionamiento.</td>
+                </tr>
 
-            <tr>
-                <td>Coworking</td>
-                <td>Máquina de café (Administración)</td>
-                <td>S/10.00</td>
-                <td>No aplica</td>
-                <td>Incluye preparación y limpieza.</td>
-            </tr>
+                <tr>
+                    <td>Coworking</td>
+                    <td>Máquina de café (Administración)</td>
+                    <td>S/10.00</td>
+                    <td>No aplica</td>
+                    <td>Incluye preparación y limpieza.</td>
+                </tr>
 
-            <tr>
-                <td>Pet Zone</td>
-                <td>Uso de agua</td>
-                <td>S/5.00 por mascota</td>
-                <td>No aplica</td>
-                <td>Máximo 2 mascotas. Propietario limpia el área.</td>
-            </tr>
+                <tr>
+                    <td>Pet Zone</td>
+                    <td>Uso de agua</td>
+                    <td>S/5.00 por mascota</td>
+                    <td>No aplica</td>
+                    <td>Máximo 2 mascotas. Propietario limpia el área.</td>
+                </tr>
 
-            <tr>
-                <td>Paquetes en recepción</td>
-                <td>Custodia hasta 48 horas</td>
-                <td>No aplica</td>
-                <td>No aplica</td>
-                <td>Solo paquetes pequeños previamente comunicados.</td>
-            </tr>
+                <tr>
+                    <td>Paquetes en recepción</td>
+                    <td>Custodia hasta 48 horas</td>
+                    <td>No aplica</td>
+                    <td>No aplica</td>
+                    <td>Solo paquetes pequeños previamente comunicados.</td>
+                </tr>
 
-            <tr>
-                <td>Todas las áreas comunes</td>
-                <td>Limpieza extraordinaria o reparación</td>
-                <td>Según presupuesto</td>
-                <td>Si existe garantía</td>
-                <td>El saldo pendiente se cargará al recibo mensual.</td>
-            </tr>
+                <tr>
+                    <td>Todas las áreas comunes</td>
+                    <td>Limpieza extraordinaria o reparación</td>
+                    <td>Según presupuesto</td>
+                    <td>Si existe garantía</td>
+                    <td>El saldo pendiente se cargará al recibo mensual.</td>
+                </tr>
 
-        </table>
+            </table>
+        </div>
+
 
     </section>
 
@@ -458,7 +477,7 @@
 
         <h3>III. Mudanzas, Residuos y Limpieza</h3>
 
-        <table>
+        <table border="1" cellpadding="8" cellspacing="0">
 
             <tr>
                 <th>Tipo de falta</th>
@@ -527,7 +546,7 @@
 
         <h3>IV. Tenencia y Cuidado de Mascotas</h3>
 
-        <table>
+        <table border="1" cellpadding="8" cellspacing="0">
 
             <tr>
                 <th>Tipo de falta</th>
@@ -606,9 +625,10 @@
             </tr>
 
         </table>
+
         <h3>V. Estacionamientos Vehiculares</h3>
 
-        <table>
+        <table border="1" cellpadding="8" cellspacing="0">
 
             <tr>
                 <th>Tipo de falta</th>
@@ -681,7 +701,7 @@
 
         <h3>VI. Parque de Bicicletas</h3>
 
-        <table>
+        <table border="1" cellpadding="8" cellspacing="0">
 
             <tr>
                 <th>Tipo de falta</th>
@@ -786,7 +806,7 @@
 
         <h3>VII. Áreas Comunes Recreativas</h3>
 
-        <table>
+        <table border="1" cellpadding="8" cellspacing="0">
 
             <tr>
                 <th>Tipo de falta</th>
@@ -920,6 +940,7 @@
                 <td>S/ 600.00</td>
                 <td>Inhabilitación del uso de áreas comunes recreativas por seis (6) meses.</td>
             </tr>
+        </table>
     </section>
 </body>
 

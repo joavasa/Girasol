@@ -2,283 +2,228 @@
    ESTILOS GENERALES
 ========================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f7f9;
-    color: #333;
-    line-height: 1.6;
+    background:#f4f7f9;
+    color:#333;
+    line-height:1.6;
 }
 
 /* ==========================
-   ENCABEZADO
+   HEADER
 ========================== */
 
-header {
-    background: #1565C0;
-    color: white;
-    padding: 25px;
-    text-align: center;
+header{
+    background:#1565C0;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:999;
 }
 
-header h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
+header h1{
+    padding:18px;
+    text-align:center;
+    font-size:30px;
 }
 
-header p {
-    font-size: 16px;
+.menu-toggle{
+    display:none;
+    position:absolute;
+    right:15px;
+    top:15px;
+    background:none;
+    border:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
 }
 
 /* ==========================
    NAVBAR
 ========================== */
 
-nav {
-    background: #2E7D32;
-    padding: 15px;
-    text-align: center;
-    position: sticky;
-    top: 0;
+nav{
+    background:#2E7D32;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 15px;
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:16px 20px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav a:hover{
+    background:#1B5E20;
 }
 
 /* ==========================
    CONTENEDOR
 ========================== */
 
-.container {
-    width: 95%;
-    max-width: 1300px;
-    margin: auto;
-    padding: 25px;
+.container{
+    width:95%;
+    max-width:1300px;
+    margin:auto;
+    padding:25px;
 }
 
 /* ==========================
    SECCIONES
 ========================== */
 
-section {
-    margin-bottom: 50px;
+section{
+    margin-bottom:50px;
 }
 
-section h2 {
-    color: #1565C0;
-    margin-bottom: 20px;
-    border-left: 6px solid #2E7D32;
-    padding-left: 12px;
+section h2{
+    color:#1565C0;
+    margin-bottom:20px;
+    border-left:6px solid #2E7D32;
+    padding-left:12px;
 }
 
-section h3 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    color: #2E7D32;
+section h3{
+    margin-top:30px;
+    margin-bottom:15px;
+    color:#2E7D32;
 }
 
 /* ==========================
    TABLAS
 ========================== */
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 25px;
-    background: white;
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:25px;
+    background:white;
 }
 
-th {
-    background: #1565C0;
-    color: white;
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
+th{
+    background:#1565C0;
+    color:white;
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:left;
 }
 
-td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    vertical-align: top;
+td{
+    border:1px solid #ddd;
+    padding:10px;
+    vertical-align:top;
 }
 
-tr:nth-child(even) {
-    background: #f8f9fa;
+tr:nth-child(even){
+    background:#f8f9fa;
 }
 
-tr:hover {
-    background: #E8F5E9;
+tr:hover{
+    background:#E8F5E9;
 }
 
 /* ==========================
    GRAVEDAD
 ========================== */
 
-.leve {
-    color: #2E7D32;
-    font-weight: bold;
+.leve{
+    color:#2E7D32;
+    font-weight:bold;
 }
 
-.grave {
-    color: #F57C00;
-    font-weight: bold;
+.grave{
+    color:#F57C00;
+    font-weight:bold;
 }
 
-.muy-grave {
-    color: #D32F2F;
-    font-weight: bold;
+.muy-grave{
+    color:#D32F2F;
+    font-weight:bold;
 }
 
 /* ==========================
    CAJAS INFORMATIVAS
 ========================== */
 
-.card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 6px solid #1565C0;
-    border-radius: 5px;
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-left:6px solid #1565C0;
+    border-radius:5px;
 }
 
 /* ==========================
    PIE DE PÁGINA
 ========================== */
 
-footer {
-    background: #1565C0;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+footer{
+    background:#1565C0;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
 }
+
 
 /* ==========================
    RESPONSIVE
 ========================== */
 
-/* ==========================
-   TABLET
-========================== */
+@media (max-width:768px){
 
-@media (max-width:1024px) {
-
-    body {
-        font-size: 18px;
+    body{
+        font-size:14px;
     }
 
-    h1 {
-        font-size: 2.2rem;
+    header h1{
+        font-size:22px;
+        padding:18px 50px 18px 15px;
+        text-align:left;
     }
 
-    h2 {
-        font-size: 1.8rem;
+    .menu-toggle{
+        display:block;
     }
 
-    h3 {
-        font-size: 1.5rem;
+    nav{
+        display:none;
+        flex-direction:column;
+        width:100%;
     }
 
-    nav a {
-        font-size: 18px;
-        margin: 0 12px;
+    nav.show{
+        display:flex;
     }
 
-    th,
-    td {
-        font-size: 17px;
-        padding: 14px;
+    nav a{
+        width:100%;
+        border-top:1px solid rgba(255,255,255,.15);
+        text-align:left;
+        padding:15px;
     }
 
-}
-
-/* ==========================
-   MÓVILES
-========================== */
-
-@media (max-width:768px) {
-
-    body {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 2.3rem;
-    }
-
-    h2 {
-        font-size: 1.9rem;
-    }
-
-    h3 {
-        font-size: 1.6rem;
-    }
-
-    nav {
-        padding: 18px;
-    }
-
-    nav a {
-        display: block;
-        margin: 12px 0;
-        font-size: 20px;
-    }
-
-    table {
-        font-size: 18px;
+    table{
+        font-size:12px;
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
     }
 
     th,
-    td {
-        padding: 16px;
-        font-size: 18px;
-    }
-
-}
-
-/* ==========================
-   MÓVILES PEQUEÑOS
-========================== */
-
-@media (max-width:480px) {
-
-    body {
-        font-size: 21px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    nav a {
-        font-size: 21px;
-    }
-
-    th,
-    td {
-        font-size: 19px;
-        padding: 14px;
+    td{
+        padding:8px;
     }
 
 }
